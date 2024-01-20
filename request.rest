@@ -1,0 +1,10 @@
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "video game",
+    "code": 98576,
+    "price": 1500,
+    "description": "Celular samsung 64gb de ram"
+    
+}
