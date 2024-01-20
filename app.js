@@ -17,5 +17,5 @@ const routes = require("./routes/router")
 app.use("/api", routes)
 
 app.listen(port, function(){
-    console.log("Servidor online")
+    console.log("Servidor online na porta " + port)
 })

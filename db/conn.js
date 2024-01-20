@@ -1,15 +1,14 @@
-// dados DB 
-// senha: 4JcvirS3SnvDOdxi
-// string conexão: mongodb+srv://ryankarpen2015:xxRkb7QKlx6QeIOm@cluster0.m6drdlk.mongodb.net/
-
+require("dotenv").config();
 const mongoose = require("mongoose")
+
+const URI = process.env.MONGODB_CONNECT_URI
 
 async function main(){
     try {
         
         mongoose.set("strictQuery", true)
 
-        await mongoose.connect("mongodb+srv://ryankarpen2015:xxRkb7QKlx6QeIOm@cluster0.m6drdlk.mongodb.net/")
+        await mongoose.connect(URI)
 
         console.log("Conectado ao banco!")
 
